@@ -11,8 +11,8 @@ namespace dotnetapp.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<IdentityUser>? _userManager;
+        private readonly SignInManager<IdentityUser>? _signInManager;
 
         // write your AccountController here...
     }
