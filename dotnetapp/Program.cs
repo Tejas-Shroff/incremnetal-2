@@ -11,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<PlayerDb>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
 
 // Add your DbContext and Identity services
 // ...

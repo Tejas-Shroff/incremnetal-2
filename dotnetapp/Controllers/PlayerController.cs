@@ -8,11 +8,16 @@ namespace dotnetapp.Controllers
 {
     public class PlayerController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext context;
 
-        public PlayerController(ApplicationDbContext context)
+        public PlayerController(ApplicationDbContext _context)
         {
-            _context = context;
+           context =_context;
+        }
+
+        public IActionResult Index(){
+            var d = context.players.ToList();
+            return View(d);
         }
 
         

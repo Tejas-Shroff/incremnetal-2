@@ -4,15 +4,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace dotnetapp.Models
 {
-    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
+    public class ApplicationDbContext :DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            : base(options)
-        {
-        }
-
-        // Define DbSet properties for your custom application entities here, if needed.
-        // For example, if you have a Player entity, you can add it ...
+        public ApplicationDbContext(){}
+        public virtual DbSet<Player> PLayers { get; set; }
         
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options){}
+        
+        protected
+
+
+
+
     }
 }
