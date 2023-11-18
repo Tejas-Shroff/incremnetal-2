@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace dotnetapp.Models
 {
-    public class ApplicationDbContext : IdentityDbContext<IdentityUser
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     {
         public ApplicationDbContext(){}
         public virtual DbSet<Player> PLayers { get; set; }
-         public virtual DbSet<Team> Teams{ get; set; }
+         public virtual DbSet<Team> Teams { get; set; }
         
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options){}
         
