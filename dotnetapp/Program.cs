@@ -6,6 +6,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Mvc;
 using dotnetapp.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.SqlServer;
+// namespace dotnetapp.models;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
