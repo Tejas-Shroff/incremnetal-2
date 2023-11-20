@@ -43,7 +43,7 @@ namespace dotnetapp.Controllers
         {
             context = _context;
         }
-        // [Route("create")]
+        [Route("create")]
         public IActionResult Create(){
  
             return  View();
@@ -59,7 +59,7 @@ namespace dotnetapp.Controllers
             // }
             // return View();
         }
-        // [Route("")]
+        [Route("")]
         public IActionResult Index(){
            
             var data=context.Players.ToList();
