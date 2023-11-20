@@ -11,7 +11,7 @@ namespace dotnetapp.Models{
         [Required]
         public int Id { get; set; }
 
-        [Required(ErrorMessage ="Name is required")]
+        [Required]
 
         public string? Name { get; set; }
 
